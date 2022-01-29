@@ -1,0 +1,54 @@
+{
+  "name": "kotanipay",
+  "description": "Kotanipay USSD App functions",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
+    "test:unit": "mocha tests/modules/api_v2.spec.js --timeout 30000"
+  },
+  "engines": {
+    "node": "14"
+  },
+  "dependencies": {
+    "@celo/contractkit": "^1.2.5",
+    "@truffle/hdwallet-provider": "^1.5.0",
+    "axios": "^0.21.4",
+    "bcryptjs": "^2.4.3",
+    "bip39-light": "^1.0.7",
+    "cors": "^2.8.5",
+    "ethereumjs-util": "^7.1.0",
+    "ethers": "^5.4.7",
+    "express": "^4.17.1",
+    "express-bearer-token": "^2.4.0",
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.16.0",
+    "gmail-send": "^1.8.10",
+    "google-libphonenumber": "^3.2.23",
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2",
+    "messagebird": "^3.6.4",
+    "moment": "^2.29.1",
+    "mongoose": "^6.1.0",
+    "prettyjson": "^1.2.1",
+    "qs": "^6.10.1",
+    "randomstring": "^1.2.1",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "tinyurl": "^1.1.7",
+    "ussd-router": "^0.1.6",
+    "web3": "^1.5.3"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.2.0",
+    "chai-as-promised": "^7.1.1",
+    "chai-http": "^4.3.0",
+    "firebase-functions-test": "^0.2.0",
+    "superagent": "^6.1.0",
+    "supertest": "^6.1.6"
+  },
+  "private": true
+}
